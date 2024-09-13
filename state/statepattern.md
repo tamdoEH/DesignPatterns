@@ -42,11 +42,13 @@ This code has several issues:
 - Adding a new state requires modifying multiple methods.
 - The state logic is scattered across different methods.
 - It violates the Open-Closed Principle: the class needs modification every time a new state is added.
+- 
 # The Solution: State Pattern
 The State Pattern can help us resolve these issues. But what exactly is it?
 
 1. What is the State Pattern?
 The State Pattern allows an object to alter its behavior when its internal state changes. It's as if the object changes its class.
+This pattern is closely related to [Finite State Machine](https://en.wikipedia.org/wiki/Finite-state_machine#:~:text=A%20finite%2Dstate%20machine%20(FSM,states%20at%20any%20given%20time)) (FSM) concept. In the FSM, the object can be in one of a finite number of states, and its behavior changes based on the current state. The State Pattern is a way to implement FSMs in object-oriented programming. 
 
 2. How does the State Pattern work?
 
